@@ -20,7 +20,7 @@ class EmailAddressParser
    def parse
     # binding.pry
      all_emails = @email.split(/[\s,]+/)
-     @all << all_emails.uniq
+     @@all << all_emails.uniq
    end
 
 end
