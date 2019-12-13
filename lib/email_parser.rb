@@ -19,7 +19,7 @@ class EmailAddressParser
 
    def parse
     # binding.pry
-    @email.split(/[\s,]+/).each{|email| @@all << email}
+     @email.split(/[\s,]+/).each{|email| @@all << email}
 
    end
 
