@@ -19,8 +19,8 @@ class EmailAddressParser
 
    def parse
     # binding.pry
-     all_emails = @email.split(/[\s,]+/)
-     all_emails.uniq.each{|email| @@all << email}
+     all_emails = @email.split(/[\s,]+/).uniq.each{|email| @@all << email}
+     
 
    end
 
