@@ -8,29 +8,19 @@ class EmailAddressParser
    attr_accessor :email
 
    @@all = []
-   #binding.pry
 
    def initialize(email)
      @email = email
    end
 
-
-
    def self.all
      @@all
    end
 
-
    def parse
     # binding.pry
-    email.split(/[\s,]+/).each{|email| @@all << email}
-
-=begin
-emails = email.split(/[\s,]+/)
-each_email = @@all << emails
-=end
-  #return @@all
+    @email.split(/[\s,]+/).each{|email| @@all << email}
+    
    end
-
 
 end
